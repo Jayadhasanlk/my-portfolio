@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+Contact | Jayadhasan
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<style>
+
+    .contact-section {
+
+        padding: 80px 0;
+
+    }
+
+
+    .contact-container {
+
+        max-width: 800px;
+
+        margin: auto;
+
+    }
+
+
+    .contact-card {
+
+        background: #1e293b;
+
+        padding: 40px;
+
+        border-radius: 15px;
+
+        border: 1px solid #334155;
+
+    }
+
+
+    .contact-item {
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .contact-item h3 {
+
+        color: #38bdf8;
+
+        margin-bottom: 5px;
+
+    }
+
+
+    .contact-item p {
+
+        color: #cbd5e1;
+
+    }
+
+
+    .contact-item a {
+
+        color: #cbd5e1;
+
+        text-decoration: none;
+
+    }
+
+
+    .contact-item a:hover {
+
+        color: #38bdf8;
+
+    }
+
+
+    .social-links {
+
+        display: flex;
+
+        gap: 15px;
+
+        margin-top: 30px;
+
+    }
+
+
+    .social {
+
+        padding: 10px 18px;
+
+        border: 1px solid #38bdf8;
+
+        border-radius: 7px;
+
+        color: #38bdf8;
+
+        text-decoration: none;
+
+        transition: 0.3s;
+
+    }
+
+
+    .social:hover {
+
+        background: #38bdf8;
+
+        color: #0f172a;
+
+    }
+
+</style>
+
+
+
+<section class="contact-section">
+
+
+    <div class="container">
+
+
+        <div class="contact-container">
+
+
+            <h1 class="section-title">
+
+                Contact <span>Me</span>
+
+            </h1>
+
+
+            <div class="contact-card">
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+
+                        <a href="mailto:jayadhasan2003@gmail.com">
+
+                            jayadhasan2003@gmail.com
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <p>
+                        Bengaluru, Karnataka, India
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Career
+                    </h3>
+
+                    <p>
+
+                        Open to Software Development,
+                        Python/Django and internship opportunities.
+
+                    </p>
+
+                </div>
+
+
+                <div class="social-links">
+
+
+                    <a href="#"
+                       class="social">
+
+                        GitHub
+
+                    </a>
+
+
+                    <a href="#"
+                       class="social">
+
+                        LinkedIn
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+{% endblock %}

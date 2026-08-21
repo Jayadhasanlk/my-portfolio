@@ -1,0 +1,357 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+Home | Jayadhasan
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<style>
+
+    /* ================= HERO ================= */
+
+    .hero {
+
+        min-height: 650px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 80px 20px;
+
+    }
+
+
+    .hero-content {
+
+        max-width: 850px;
+
+    }
+
+
+    .hero-small {
+
+        color: #38bdf8;
+
+        font-size: 17px;
+
+        font-weight: bold;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 65px;
+
+        line-height: 1.1;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .hero h1 span {
+
+        color: #38bdf8;
+
+    }
+
+
+    .hero h2 {
+
+        color: #94a3b8;
+
+        font-size: 28px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .hero p {
+
+        color: #cbd5e1;
+
+        font-size: 19px;
+
+        max-width: 700px;
+
+        margin: 0 auto 30px auto;
+
+    }
+
+
+    .hero-buttons {
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 15px;
+
+    }
+
+
+    .btn-outline {
+
+        display: inline-block;
+
+        padding: 13px 25px;
+
+        border: 1px solid #38bdf8;
+
+        color: #38bdf8;
+
+        text-decoration: none;
+
+        border-radius: 8px;
+
+        transition: 0.3s;
+
+    }
+
+
+    .btn-outline:hover {
+
+        background: #38bdf8;
+
+        color: #0f172a;
+
+    }
+
+
+    /* ================= QUICK INFO ================= */
+
+    .quick-info {
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+
+        padding-bottom: 80px;
+
+    }
+
+
+    .info-card {
+
+        background: #1e293b;
+
+        padding: 30px;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        border: 1px solid #334155;
+
+        transition: 0.3s;
+
+    }
+
+
+    .info-card:hover {
+
+        transform: translateY(-5px);
+
+        border-color: #38bdf8;
+
+    }
+
+
+    .info-card h3 {
+
+        color: #38bdf8;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .info-card p {
+
+        color: #cbd5e1;
+
+    }
+
+
+    /* ================= MOBILE ================= */
+
+    @media(max-width: 700px) {
+
+        .hero h1 {
+
+            font-size: 42px;
+
+        }
+
+        .hero h2 {
+
+            font-size: 23px;
+
+        }
+
+        .hero p {
+
+            font-size: 16px;
+
+        }
+
+        .hero-buttons {
+
+            flex-direction: column;
+
+        }
+
+        .quick-info {
+
+            grid-template-columns: 1fr;
+
+        }
+
+    }
+
+</style>
+
+
+
+<section class="hero">
+
+
+    <div class="hero-content">
+
+
+        <div class="hero-small">
+
+            B.TECH AI & DATA SCIENCE
+
+        </div>
+
+
+        <h1>
+
+            Hi, I'm
+
+            <span>
+                Jayadhasan
+            </span>
+
+        </h1>
+
+
+        <h2>
+
+            Software Developer
+
+        </h2>
+
+
+        <p>
+
+            Aspiring Software Developer with hands-on experience
+            in Python, Django, JavaScript, SQL, HTML and CSS.
+            Interested in building full-stack applications,
+            REST APIs and practical AI solutions.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <a href="{% url 'projects' %}"
+               class="btn">
+
+                View Projects
+
+            </a>
+
+
+            <a href="{% url 'contact' %}"
+               class="btn-outline">
+
+                Contact Me
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<section class="container">
+
+
+    <div class="quick-info">
+
+
+        <div class="info-card">
+
+            <h3>
+                Python
+            </h3>
+
+            <p>
+                Backend development and programming
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>
+                Django
+            </h3>
+
+            <p>
+                Full-stack web development
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>
+                SQL
+            </h3>
+
+            <p>
+                Database and data management
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+Projects | Jayadhasan
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<style>
+
+    .projects-section {
+
+        padding: 80px 0;
+
+    }
+
+
+    .projects {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+
+    }
+
+
+    .project-card {
+
+        background: #1e293b;
+
+        padding: 35px;
+
+        border-radius: 15px;
+
+        border: 1px solid #334155;
+
+        transition: 0.3s;
+
+    }
+
+
+    .project-card:hover {
+
+        transform: translateY(-8px);
+
+        border-color: #38bdf8;
+
+    }
+
+
+    .project-number {
+
+        color: #38bdf8;
+
+        font-size: 15px;
+
+        font-weight: bold;
+
+    }
+
+
+    .project-card h2 {
+
+        margin: 12px 0 15px 0;
+
+        font-size: 28px;
+
+    }
+
+
+    .project-card p {
+
+        color: #cbd5e1;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .technologies {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+    }
+
+
+    .technologies span {
+
+        background: #0f172a;
+
+        color: #38bdf8;
+
+        padding: 6px 10px;
+
+        border-radius: 5px;
+
+        font-size: 13px;
+
+    }
+
+
+    @media(max-width: 700px) {
+
+        .projects {
+
+            grid-template-columns: 1fr;
+
+        }
+
+    }
+
+</style>
+
+
+
+<section class="projects-section">
+
+
+    <div class="container">
+
+
+        <h1 class="section-title">
+
+            My <span>Projects</span>
+
+        </h1>
+
+
+        <div class="projects">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+
+                <div class="project-number">
+                    PROJECT 01
+                </div>
+
+
+                <h2>
+                    Chess Mart
+                </h2>
+
+
+                <p>
+
+                    Developed a responsive e-commerce
+                    web application for browsing,
+                    searching and purchasing chess products.
+
+                </p>
+
+
+                <p>
+
+                    Implemented shopping cart functionality,
+                    Local Storage integration, product search
+                    and category filtering.
+
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>HTML5</span>
+
+                    <span>CSS3</span>
+
+                    <span>JavaScript</span>
+
+                    <span>Bootstrap</span>
+
+                    <span>Tailwind CSS</span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+
+                <div class="project-number">
+                    PROJECT 02
+                </div>
+
+
+                <h2>
+                    Vision Driven Gameplay
+                </h2>
+
+
+                <p>
+
+                    Developed a gesture-controlled game
+                    as a final-year team project.
+
+                </p>
+
+
+                <p>
+
+                    Integrated real-time hand gesture
+                    recognition, computer vision and
+                    machine-learning techniques to enable
+                    touchless gameplay.
+
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>Unity</span>
+
+                    <span>Python</span>
+
+                    <span>Computer Vision</span>
+
+                    <span>MediaPipe</span>
+
+                    <span>TensorFlow</span>
+
+                    <span>OpenCV</span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+{% endblock %}
